@@ -7,44 +7,106 @@
 //
 
 #import "AppDelegate.h"
-
+NSString *STATUSSTRING = @"";
 @interface AppDelegate ()
-
+/** 网络状态检查者 */
+@property(nonatomic, strong) AFNetworkReachabilityManager *networkMonitorManager;
 @end
 
 @implementation AppDelegate
 
-
+#pragma mark -
+- (AFNetworkReachabilityManager *)networkMonitorManager {
+    
+    if (!_networkMonitorManager) {
+        _networkMonitorManager = [AFNetworkReachabilityManager sharedManager];
+        [_networkMonitorManager startMonitoring];  //开始监听
+    }
+    return _networkMonitorManager;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        // 当网络状态改变时调用
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知网络");
+                STATUSSTRING = @"未知网络";
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"没有网络");
+                STATUSSTRING = @"没有网络";
+                
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"手机自带网络");
+                STATUSSTRING = @"手机自带网络";
+                
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"WIFI");
+                STATUSSTRING = @"WIFI";
+                
+                break;
+        }
+    }];
+    
+    //开始监控
+    [manager startMonitoring];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+
+    //数据库
+    //    [MagicalRecord setupCoreDataStackWithStoreNamed:@"SU2.sqlite"];
+    //    NSLog(@"%@",NSHomeDirectory());
+    
+//    NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISLOGIN"];
+    
+    //    if([str isEqualToString:@"登录"]){
+    
+    CustomTabBarViewController *tbvc = [[CustomTabBarViewController alloc]init];
+    self.window.rootViewController = [tbvc createUI];
+
+    
+    //    }else{
+    //
+    //        LoginController *lc = [[LoginController alloc]init];
+    //        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:lc];
+    //        self.window.rootViewController = nav;
+    //    }
+    
+    [self.window makeKeyAndVisible];
+
+      return YES;
 }
 
-
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+
 }
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+
 }
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+ 
+    //数据库
+    //    [MagicalRecord cleanUp];
 }
 
 

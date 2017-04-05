@@ -8,7 +8,7 @@
 
 #import "CustomNavigationVController.h"
 
-@interface CustomNavigationVController ()
+@interface CustomNavigationVController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @end
 

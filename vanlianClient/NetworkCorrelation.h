@@ -22,8 +22,7 @@ typedef NS_ENUM(NSUInteger,HttpRequestType) {
     HttpRequestTypePost
 };
 
-typedef void (^SuccessBlock)(id responseObject,BOOL isExistData);
-typedef void (^FailureBlock)(NSError *error);
+typedef void(^Complicate)(id object,BOOL success);
 
 @interface NetworkCorrelation : NSObject
 
@@ -36,17 +35,16 @@ typedef void (^FailureBlock)(NSError *error);
  *  @param parameters  请求的参数
  *  @param type        请求的类型
  *  @param  refreshState 是否刷新
- *  @param  success 请求成功回调
- *  @param  failure 请求失败回调
- 
+ *  @param  complicate 成功失败回调
  */
 -(void)requestWithURLString:(NSString *)URLString
                   parameters:(id)parameters
                         type:(HttpRequestType)type
-                refreshState:(BOOL)refreshState
-               hudSuperView:(UIViewController *)hViewController
-                     success:(SuccessBlock)success
-                     failure:(FailureBlock)failure;
+                complicate:(Complicate)complicate
+               refreshState:(BOOL)refreshState
+                noDataState:(BOOL)noDataState
+                 noDataView:(UIView *)noDataView
+                sController:(UIViewController *)sController;
 
 -(void)startloadanimation:(UIViewController *)hViewController;
 

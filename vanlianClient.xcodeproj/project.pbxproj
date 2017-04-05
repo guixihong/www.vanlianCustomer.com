@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09191553F273A6A4C413F88E /* libPods-vanlianClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F54DA437C23486D96636D8CC /* libPods-vanlianClient.a */; };
 		90A77BC01E94948B007F517E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77BBF1E94948B007F517E /* main.m */; };
 		90A77BC31E94948B007F517E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77BC21E94948B007F517E /* AppDelegate.m */; };
-		90A77BC61E94948B007F517E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77BC51E94948B007F517E /* ViewController.m */; };
 		90A77BC91E94948B007F517E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A77BC71E94948B007F517E /* Main.storyboard */; };
 		90A77BCB1E94948B007F517E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A77BCA1E94948B007F517E /* Assets.xcassets */; };
 		90A77BCE1E94948B007F517E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A77BCC1E94948B007F517E /* LaunchScreen.storyboard */; };
 		90A77BD91E94948B007F517E /* vanlianClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77BD81E94948B007F517E /* vanlianClientTests.m */; };
 		90A77BE41E94948B007F517E /* vanlianClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77BE31E94948B007F517E /* vanlianClientUITests.m */; };
+		90A77BF91E94963D007F517E /* VLCBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77BF81E94963D007F517E /* VLCBaseController.m */; };
+		90A77BFC1E949676007F517E /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77BFB1E949676007F517E /* HomeController.m */; };
+		90A77C081E9496EA007F517E /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C071E9496EA007F517E /* MyController.m */; };
+		90A77C0B1E949703007F517E /* ProductCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C0A1E949703007F517E /* ProductCenterController.m */; };
+		90A77C0E1E949723007F517E /* MyFamilyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C0D1E949723007F517E /* MyFamilyController.m */; };
+		90A77C111E94973F007F517E /* DiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C101E94973F007F517E /* DiscoveryController.m */; };
+		90A77C241E949926007F517E /* NetworkCorrelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C231E949926007F517E /* NetworkCorrelation.m */; };
+		90A77C271E94BF86007F517E /* VLCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C261E94BF86007F517E /* VLCBaseModel.m */; };
+		90A77C2A1E94BFA1007F517E /* CustomTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C291E94BFA1007F517E /* CustomTabBarViewController.m */; };
+		90A77C2D1E94BFB3007F517E /* CustomNavigationVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A77C2C1E94BFB3007F517E /* CustomNavigationVController.m */; };
+		90A77C3F1E94C39B007F517E /* tab_Data_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A77C2F1E94C39B007F517E /* tab_Data_n@2x.png */; };
+		90A77C401E94C39B007F517E /* tab_Data_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A77C301E94C39B007F517E /* tab_Data_n@3x.png */; };
+		90A77C411E94C39B007F517E /* tab_Data_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A77C311E94C39B007F517E /* tab_Data_s@2x.png */; };
+		90A77C421E94C39B007F517E /* tab_Data_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A77C321E94C39B007F517E /* tab_Data_s@3x.png */; };
+		A90576A00540FDA54AAB2D99 /* libPods-vanlianClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D17A7AAA2EBB92C8B01E56A /* libPods-vanlianClientTests.a */; };
+		E21E14E1B7D99D4C652789EE /* libPods-vanlianClientUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4318C1044E8CFEC898C235A8 /* libPods-vanlianClientUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		312156AAD1FB4DEE25165592 /* Pods-vanlianClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vanlianClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-vanlianClientUITests/Pods-vanlianClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4318C1044E8CFEC898C235A8 /* libPods-vanlianClientUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vanlianClientUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F55008AC5B1834003223D4E /* Pods-vanlianClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vanlianClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vanlianClientUITests/Pods-vanlianClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		58FAD64FFFC5D204F20401DF /* Pods-vanlianClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vanlianClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-vanlianClient/Pods-vanlianClient.release.xcconfig"; sourceTree = "<group>"; };
+		6B4161AE99536CFCD12D036E /* Pods-vanlianClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vanlianClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-vanlianClientTests/Pods-vanlianClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D22CBB10E2F7BB584559C8B /* Pods-vanlianClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vanlianClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vanlianClientTests/Pods-vanlianClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D17A7AAA2EBB92C8B01E56A /* libPods-vanlianClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vanlianClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A77BBB1E94948B007F517E /* vanlianClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vanlianClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A77BBF1E94948B007F517E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90A77BC11E94948B007F517E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90A77BC21E94948B007F517E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		90A77BC41E94948B007F517E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		90A77BC51E94948B007F517E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		90A77BC81E94948B007F517E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90A77BCA1E94948B007F517E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90A77BCD1E94948B007F517E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +72,33 @@
 		90A77BDF1E94948B007F517E /* vanlianClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vanlianClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A77BE31E94948B007F517E /* vanlianClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vanlianClientUITests.m; sourceTree = "<group>"; };
 		90A77BE51E94948B007F517E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90A77BF11E9494BE007F517E /* vlcPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vlcPCH.pch; sourceTree = "<group>"; };
+		90A77BF71E94963D007F517E /* VLCBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLCBaseController.h; sourceTree = "<group>"; };
+		90A77BF81E94963D007F517E /* VLCBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLCBaseController.m; sourceTree = "<group>"; };
+		90A77BFA1E949676007F517E /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		90A77BFB1E949676007F517E /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		90A77C061E9496EA007F517E /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
+		90A77C071E9496EA007F517E /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
+		90A77C091E949703007F517E /* ProductCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCenterController.h; sourceTree = "<group>"; };
+		90A77C0A1E949703007F517E /* ProductCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCenterController.m; sourceTree = "<group>"; };
+		90A77C0C1E949723007F517E /* MyFamilyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFamilyController.h; sourceTree = "<group>"; };
+		90A77C0D1E949723007F517E /* MyFamilyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFamilyController.m; sourceTree = "<group>"; };
+		90A77C0F1E94973F007F517E /* DiscoveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryController.h; sourceTree = "<group>"; };
+		90A77C101E94973F007F517E /* DiscoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryController.m; sourceTree = "<group>"; };
+		90A77C221E949926007F517E /* NetworkCorrelation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCorrelation.h; sourceTree = "<group>"; };
+		90A77C231E949926007F517E /* NetworkCorrelation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCorrelation.m; sourceTree = "<group>"; };
+		90A77C251E94BF86007F517E /* VLCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLCBaseModel.h; sourceTree = "<group>"; };
+		90A77C261E94BF86007F517E /* VLCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLCBaseModel.m; sourceTree = "<group>"; };
+		90A77C281E94BFA1007F517E /* CustomTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarViewController.h; sourceTree = "<group>"; };
+		90A77C291E94BFA1007F517E /* CustomTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarViewController.m; sourceTree = "<group>"; };
+		90A77C2B1E94BFB3007F517E /* CustomNavigationVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationVController.h; sourceTree = "<group>"; };
+		90A77C2C1E94BFB3007F517E /* CustomNavigationVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationVController.m; sourceTree = "<group>"; };
+		90A77C2F1E94C39B007F517E /* tab_Data_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_Data_n@2x.png"; sourceTree = "<group>"; };
+		90A77C301E94C39B007F517E /* tab_Data_n@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_Data_n@3x.png"; sourceTree = "<group>"; };
+		90A77C311E94C39B007F517E /* tab_Data_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_Data_s@2x.png"; sourceTree = "<group>"; };
+		90A77C321E94C39B007F517E /* tab_Data_s@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_Data_s@3x.png"; sourceTree = "<group>"; };
+		B0544E20F20350355D6961A5 /* Pods-vanlianClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vanlianClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vanlianClient/Pods-vanlianClient.debug.xcconfig"; sourceTree = "<group>"; };
+		F54DA437C23486D96636D8CC /* libPods-vanlianClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vanlianClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09191553F273A6A4C413F88E /* libPods-vanlianClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90576A00540FDA54AAB2D99 /* libPods-vanlianClientTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +122,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21E14E1B7D99D4C652789EE /* libPods-vanlianClientUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21DBD691C13618B24D55240C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0544E20F20350355D6961A5 /* Pods-vanlianClient.debug.xcconfig */,
+				58FAD64FFFC5D204F20401DF /* Pods-vanlianClient.release.xcconfig */,
+				6D22CBB10E2F7BB584559C8B /* Pods-vanlianClientTests.debug.xcconfig */,
+				6B4161AE99536CFCD12D036E /* Pods-vanlianClientTests.release.xcconfig */,
+				4F55008AC5B1834003223D4E /* Pods-vanlianClientUITests.debug.xcconfig */,
+				312156AAD1FB4DEE25165592 /* Pods-vanlianClientUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		90A77BB21E94948B007F517E = {
 			isa = PBXGroup;
 			children = (
+				90A77BF61E949575007F517E /* Home */,
+				90A77BF51E949561007F517E /* ProductCenter */,
+				90A77BF41E94955A007F517E /* MyFamily */,
+				90A77BF31E949553007F517E /* Discovery */,
+				90A77BF21E94954A007F517E /* My */,
 				90A77BBD1E94948B007F517E /* vanlianClient */,
 				90A77BD71E94948B007F517E /* vanlianClientTests */,
 				90A77BE21E94948B007F517E /* vanlianClientUITests */,
 				90A77BBC1E94948B007F517E /* Products */,
+				21DBD691C13618B24D55240C /* Pods */,
+				A5A34206885D56FF8E5493B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +172,10 @@
 		90A77BBD1E94948B007F517E /* vanlianClient */ = {
 			isa = PBXGroup;
 			children = (
+				90A77C4F1E94C5AB007F517E /* Public */,
+				90A77C2E1E94C38F007F517E /* Image */,
 				90A77BC11E94948B007F517E /* AppDelegate.h */,
 				90A77BC21E94948B007F517E /* AppDelegate.m */,
-				90A77BC41E94948B007F517E /* ViewController.h */,
-				90A77BC51E94948B007F517E /* ViewController.m */,
 				90A77BC71E94948B007F517E /* Main.storyboard */,
 				90A77BCA1E94948B007F517E /* Assets.xcassets */,
 				90A77BCC1E94948B007F517E /* LaunchScreen.storyboard */,
@@ -140,6 +211,210 @@
 			path = vanlianClientUITests;
 			sourceTree = "<group>";
 		};
+		90A77BF21E94954A007F517E /* My */ = {
+			isa = PBXGroup;
+			children = (
+				90A77C061E9496EA007F517E /* MyController.h */,
+				90A77C071E9496EA007F517E /* MyController.m */,
+				90A77C211E94982D007F517E /* Controllers */,
+				90A77C201E949828007F517E /* Views */,
+				90A77C1F1E949822007F517E /* Models */,
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
+		90A77BF31E949553007F517E /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				90A77C0F1E94973F007F517E /* DiscoveryController.h */,
+				90A77C101E94973F007F517E /* DiscoveryController.m */,
+				90A77C1E1E949817007F517E /* Controllers */,
+				90A77C1C1E9497F2007F517E /* Views */,
+				90A77C1B1E9497EB007F517E /* Models */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		90A77BF41E94955A007F517E /* MyFamily */ = {
+			isa = PBXGroup;
+			children = (
+				90A77C0C1E949723007F517E /* MyFamilyController.h */,
+				90A77C0D1E949723007F517E /* MyFamilyController.m */,
+				90A77C1A1E9497DC007F517E /* Controllers */,
+				90A77C191E9497D1007F517E /* Views */,
+				90A77C181E9497C4007F517E /* Models */,
+			);
+			name = MyFamily;
+			sourceTree = "<group>";
+		};
+		90A77BF51E949561007F517E /* ProductCenter */ = {
+			isa = PBXGroup;
+			children = (
+				90A77C091E949703007F517E /* ProductCenterController.h */,
+				90A77C0A1E949703007F517E /* ProductCenterController.m */,
+				90A77C171E9497B7007F517E /* Controllers */,
+				90A77C161E9497B1007F517E /* Views */,
+				90A77C151E9497AA007F517E /* Models */,
+			);
+			name = ProductCenter;
+			sourceTree = "<group>";
+		};
+		90A77BF61E949575007F517E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				90A77BFA1E949676007F517E /* HomeController.h */,
+				90A77BFB1E949676007F517E /* HomeController.m */,
+				90A77C141E94977A007F517E /* Controllers */,
+				90A77C131E949770007F517E /* Views */,
+				90A77C121E949766007F517E /* Models */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		90A77C121E949766007F517E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90A77C131E949770007F517E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		90A77C141E94977A007F517E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		90A77C151E9497AA007F517E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90A77C161E9497B1007F517E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		90A77C171E9497B7007F517E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		90A77C181E9497C4007F517E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90A77C191E9497D1007F517E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		90A77C1A1E9497DC007F517E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		90A77C1B1E9497EB007F517E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90A77C1C1E9497F2007F517E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		90A77C1E1E949817007F517E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		90A77C1F1E949822007F517E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90A77C201E949828007F517E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		90A77C211E94982D007F517E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		90A77C2E1E94C38F007F517E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				90A77C2F1E94C39B007F517E /* tab_Data_n@2x.png */,
+				90A77C301E94C39B007F517E /* tab_Data_n@3x.png */,
+				90A77C311E94C39B007F517E /* tab_Data_s@2x.png */,
+				90A77C321E94C39B007F517E /* tab_Data_s@3x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		90A77C4F1E94C5AB007F517E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				90A77BF11E9494BE007F517E /* vlcPCH.pch */,
+				90A77C221E949926007F517E /* NetworkCorrelation.h */,
+				90A77C231E949926007F517E /* NetworkCorrelation.m */,
+				90A77C281E94BFA1007F517E /* CustomTabBarViewController.h */,
+				90A77C291E94BFA1007F517E /* CustomTabBarViewController.m */,
+				90A77C2B1E94BFB3007F517E /* CustomNavigationVController.h */,
+				90A77C2C1E94BFB3007F517E /* CustomNavigationVController.m */,
+				90A77BF71E94963D007F517E /* VLCBaseController.h */,
+				90A77BF81E94963D007F517E /* VLCBaseController.m */,
+				90A77C251E94BF86007F517E /* VLCBaseModel.h */,
+				90A77C261E94BF86007F517E /* VLCBaseModel.m */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		A5A34206885D56FF8E5493B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F54DA437C23486D96636D8CC /* libPods-vanlianClient.a */,
+				7D17A7AAA2EBB92C8B01E56A /* libPods-vanlianClientTests.a */,
+				4318C1044E8CFEC898C235A8 /* libPods-vanlianClientUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +422,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A77BE81E94948B007F517E /* Build configuration list for PBXNativeTarget "vanlianClient" */;
 			buildPhases = (
+				706848CA4A285E2F697BA7AA /* [CP] Check Pods Manifest.lock */,
 				90A77BB71E94948B007F517E /* Sources */,
 				90A77BB81E94948B007F517E /* Frameworks */,
 				90A77BB91E94948B007F517E /* Resources */,
+				CD1D29ECF201C0B8826790AB /* [CP] Embed Pods Frameworks */,
+				D747A5E367F816D03D56D394 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +442,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A77BEB1E94948B007F517E /* Build configuration list for PBXNativeTarget "vanlianClientTests" */;
 			buildPhases = (
+				7EC1D25458EED611D7467B6C /* [CP] Check Pods Manifest.lock */,
 				90A77BD01E94948B007F517E /* Sources */,
 				90A77BD11E94948B007F517E /* Frameworks */,
 				90A77BD21E94948B007F517E /* Resources */,
+				D8D7DBF07DA9390CD54E752C /* [CP] Embed Pods Frameworks */,
+				58B8A63207AAC15884ED839F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +463,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A77BEE1E94948B007F517E /* Build configuration list for PBXNativeTarget "vanlianClientUITests" */;
 			buildPhases = (
+				06E5F57EBC472C82944AFA99 /* [CP] Check Pods Manifest.lock */,
 				90A77BDB1E94948B007F517E /* Sources */,
 				90A77BDC1E94948B007F517E /* Frameworks */,
 				90A77BDD1E94948B007F517E /* Resources */,
+				C8C17937466127D5B5D74A86 /* [CP] Embed Pods Frameworks */,
+				84BE8B3B2618C432E28DB1D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,7 +491,7 @@
 				TargetAttributes = {
 					90A77BBA1E94948B007F517E = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = W92LL7L2EW;
+						DevelopmentTeam = XLJ7XNVVJY;
 						ProvisioningStyle = Automatic;
 					};
 					90A77BD31E94948B007F517E = {
@@ -250,8 +534,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A77BCE1E94948B007F517E /* LaunchScreen.storyboard in Resources */,
+				90A77C401E94C39B007F517E /* tab_Data_n@3x.png in Resources */,
+				90A77C411E94C39B007F517E /* tab_Data_s@2x.png in Resources */,
 				90A77BCB1E94948B007F517E /* Assets.xcassets in Resources */,
+				90A77C421E94C39B007F517E /* tab_Data_s@3x.png in Resources */,
 				90A77BC91E94948B007F517E /* Main.storyboard in Resources */,
+				90A77C3F1E94C39B007F517E /* tab_Data_n@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +559,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06E5F57EBC472C82944AFA99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58B8A63207AAC15884ED839F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vanlianClientTests/Pods-vanlianClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706848CA4A285E2F697BA7AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7EC1D25458EED611D7467B6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84BE8B3B2618C432E28DB1D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vanlianClientUITests/Pods-vanlianClientUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C17937466127D5B5D74A86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vanlianClientUITests/Pods-vanlianClientUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD1D29ECF201C0B8826790AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vanlianClient/Pods-vanlianClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D747A5E367F816D03D56D394 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vanlianClient/Pods-vanlianClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D7DBF07DA9390CD54E752C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vanlianClientTests/Pods-vanlianClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90A77BB71E94948B007F517E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A77BC61E94948B007F517E /* ViewController.m in Sources */,
+				90A77BFC1E949676007F517E /* HomeController.m in Sources */,
+				90A77BF91E94963D007F517E /* VLCBaseController.m in Sources */,
+				90A77C0B1E949703007F517E /* ProductCenterController.m in Sources */,
+				90A77C0E1E949723007F517E /* MyFamilyController.m in Sources */,
+				90A77C271E94BF86007F517E /* VLCBaseModel.m in Sources */,
+				90A77C111E94973F007F517E /* DiscoveryController.m in Sources */,
+				90A77C081E9496EA007F517E /* MyController.m in Sources */,
 				90A77BC31E94948B007F517E /* AppDelegate.m in Sources */,
+				90A77C2A1E94BFA1007F517E /* CustomTabBarViewController.m in Sources */,
+				90A77C2D1E94BFB3007F517E /* CustomNavigationVController.m in Sources */,
 				90A77BC01E94948B007F517E /* main.m in Sources */,
+				90A77C241E949926007F517E /* NetworkCorrelation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,30 +858,41 @@
 		};
 		90A77BE91E94948B007F517E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0544E20F20350355D6961A5 /* Pods-vanlianClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W92LL7L2EW;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = XLJ7XNVVJY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = vanlianClient/vlcPCH.pch;
 				INFOPLIST_FILE = vanlianClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "VKLJ-SU.vanlianClient";
+				PRODUCT_BUNDLE_IDENTIFIER = www.vanlianCustomer.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		90A77BEA1E94948B007F517E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58FAD64FFFC5D204F20401DF /* Pods-vanlianClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W92LL7L2EW;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = XLJ7XNVVJY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = vanlianClient/vlcPCH.pch;
 				INFOPLIST_FILE = vanlianClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "VKLJ-SU.vanlianClient";
+				PRODUCT_BUNDLE_IDENTIFIER = www.vanlianCustomer.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		90A77BEC1E94948B007F517E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D22CBB10E2F7BB584559C8B /* Pods-vanlianClientTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = W92LL7L2EW;
@@ -460,6 +906,7 @@
 		};
 		90A77BED1E94948B007F517E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4161AE99536CFCD12D036E /* Pods-vanlianClientTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = W92LL7L2EW;
@@ -473,6 +920,7 @@
 		};
 		90A77BEF1E94948B007F517E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F55008AC5B1834003223D4E /* Pods-vanlianClientUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = W92LL7L2EW;
 				INFOPLIST_FILE = vanlianClientUITests/Info.plist;
@@ -485,6 +933,7 @@
 		};
 		90A77BF01E94948B007F517E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312156AAD1FB4DEE25165592 /* Pods-vanlianClientUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = W92LL7L2EW;
 				INFOPLIST_FILE = vanlianClientUITests/Info.plist;
@@ -514,6 +963,7 @@
 				90A77BEA1E94948B007F517E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A77BEB1E94948B007F517E /* Build configuration list for PBXNativeTarget "vanlianClientTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +972,7 @@
 				90A77BED1E94948B007F517E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A77BEE1E94948B007F517E /* Build configuration list for PBXNativeTarget "vanlianClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +981,7 @@
 				90A77BF01E94948B007F517E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

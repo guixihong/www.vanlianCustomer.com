@@ -11,3 +11,4 @@
 @interface ProductCenterController : VLCBaseController
 
 @end
+

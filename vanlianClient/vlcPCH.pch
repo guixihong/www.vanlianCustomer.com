@@ -9,7 +9,53 @@
 #ifndef vlcPCH_pch
 #define vlcPCH_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <AFNetworking.h>
+#import <MJRefresh.h>
+#import <JSONModel.h>
+#import <SDAutoLayout.h>
+#import <MBProgressHUD.h>
+#import <UIButton+WebCache.h>
+#import <UIImageView+WebCache.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <Reachability.h>
+//获取机型
+#import <sys/utsname.h>
+#import <WebKit/WebKit.h>
+#import "AppDelegate.h"
+#import "NetworkCorrelation.h"
+#import "VLCBaseController.h"
+#import "CustomTabBarViewController.h"
+#import "CustomNavigationVController.h"
+#import "VLCBaseModel.h"
+//随机颜色
+#define RANDOMCOLOR [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1]
+//RGB颜色
+#define COLOR(R, G, B, A)  [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+//iOS版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+//Log
+#ifdef DEBUG
+#define SLog(OBJ) NSLog(@"%s🍉第%d行🍉🍉🍉%@",__func__,__LINE__,OBJ)
+#else
+#define SLog(OBJ)
+#endif
+
+#define APPDELEGATE (AppDelegate *)[UIApplication sharedApplication].delegate
+#define AppWindow [UIApplication sharedApplication].keyWindow
+
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define IPHONE6WIDTH 375.0
+#define IPHONE6HEIGHT 667.0
+#define ScaleX SCREENWIDTH / IPHONE6WIDTH
+#define ScaleY SCREENHEIGHT / IPHONE6HEIGHT
+#define SX(l) l*ScaleX
+#define SY(l) l*ScaleY
+#define SFont(x) x*ScaleX
+#define PINGFANG(font) [UIFont fontWithName:@"PingFangSC-Regular" size:font]
+#define SIMG(name) [UIImage imageNamed:name]
+#define VLCTextColor [UIColor colorWithRed:74/256.0 green:74/256.0 blue:74/256.0 alpha:1]
+
+extern  NSString *STATUSSTRING;
 
 #endif /* vlcPCH_pch */
