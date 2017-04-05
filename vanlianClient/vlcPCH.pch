@@ -1,0 +1,15 @@
+//
+//  vlcPCH.pch
+//  vanlianClient
+//
+//  Created by SU on 2017/4/5.
+//  Copyright © 2017年 VKLJ_SU. All rights reserved.
+//
+
+#ifndef vlcPCH_pch
+#define vlcPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* vlcPCH_pch */

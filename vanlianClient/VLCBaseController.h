@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  VLCBaseController.h
 //  vanlianClient
 //
 //  Created by SU on 2017/4/5.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface VLCBaseController : UIViewController
 
 @end
-
